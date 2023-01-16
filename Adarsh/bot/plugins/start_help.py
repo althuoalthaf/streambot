@@ -17,7 +17,7 @@ if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
             [
                 ["start⚡️","help📚","login🔑","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["Support ❤️","ping📡","status📊","maintainers😎"]
                         
             ],
             resize_keyboard=True
@@ -26,7 +26,7 @@ else:
             buttonz=ReplyKeyboardMarkup(
             [
                 ["start⚡️","help📚","DC"],
-                ["follow❤️","ping📡","status📊","maintainers😎"]
+                ["Support ❤️","ping📡","status📊","maintainers😎"]
                         
             ],
             resize_keyboard=True
@@ -76,7 +76,7 @@ async def start(b, m):
             return
     await StreamBot.send_photo(
         chat_id=m.chat.id,
-        photo ="https://telegra.ph/file/ca10e459bc6f48a4ad0f7.jpg",
+        photo ="https://te.legra.ph/file/daa7eef8f79ef8f94f9e9.jpg",
         caption =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot with Channel support.\nSend me any file and get a direct download link and streamable link.!',
         reply_markup=buttonz)
 
