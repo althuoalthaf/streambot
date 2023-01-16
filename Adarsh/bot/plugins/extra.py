@@ -30,7 +30,7 @@ async def maintainers(b,m):
                     disable_web_page_preview=True)
             
          
-@StreamBot.on_message(filters.regex("Support ❤️"))
+@StreamBot.on_message(filters.regex("Support❤️"))
 async def follow_user(b,m):
     try:
        await b.send_message(chat_id=m.chat.id,text="HELLO",quote=True)
@@ -42,7 +42,7 @@ async def follow_user(b,m):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("SUPPORT ❤️", url=f"https://t.me/Gwsupport_Group")
+                                InlineKeyboardButton("SUPPORT❤️", url=f"https://t.me/Gwsupport_Group")
                             ]
                         ]
                     ),
